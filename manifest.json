@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Learning Assist OS",
+  "version": "1.0",
+  "description": "Helps students get unstuck without giving answers.",
+  "permissions": ["storage"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "host_permissions": [
+    "*://*.mathacademy.com/*",
+    "*://*.khanacademy.org/*",
+    "*://*.ixl.com/*",
+    "*://*.synthesis.com/*",
+    "*://*.instructure.com/*",
+    "*://*.schoology.com/*",
+    "https://learning-assist-os.vercel.app/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.mathacademy.com/*",
+        "*://*.khanacademy.org/*",
+        "*://*.ixl.com/*",
+        "*://*.synthesis.com/*",
+        "*://*.instructure.com/*",
+        "*://*.schoology.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "learning-assist-os",
+  "version": "0.1.0",
+  "description": "AI intervention layer that helps students get unstuck without giving answers.",
+  "main": "content.js",
+  "type": "commonjs",
+  "dependencies": {
+    "openai": "^6.0.0"
+  }
+}

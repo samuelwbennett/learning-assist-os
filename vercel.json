@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "src": "/extension.crx",
+      "dest": "/public/extension.crx"
+    },
+    {
+      "src": "/update.xml",
+      "dest": "/public/update.xml"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
+  ]
+}
